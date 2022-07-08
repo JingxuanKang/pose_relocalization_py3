@@ -1,8 +1,10 @@
 # pose_relocalization_py3
+Fork from https://github.com/nqanh/pose_relocalization
 Fixes to old version code
 ### Requirements
+
+- tensorflow-gpu
 - Keras 2.0.3
-- Tensorflow >= 1.0 (used 1.1.0)
 
 ### Download dataset
 - Download datafrom from: http://rpg.ifi.uzh.ch/davis_data.html 
