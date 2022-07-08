@@ -7,13 +7,16 @@ Fixes to old version code
 - Keras 2.0.3
 - more details in environment.yaml
 - note: Do not use 30series GPU(Some unknown errors)
-### Download dataset
-- create dataset 
+### Dataset
+- create dataset in dataset/ as pickle file
+- the data in the pickle is a tuple, 
+- tuple[0] are the images, the shape is [number_of_images,224,224,3]
+- tuple[1] are the posesm the shape is [number_of_images,7] 
 
 ### Run train script:
 - `cd main_keras`
-- `python train.py --gpu GPU_ID --scene SCENCE_ID` 
-- For example: `python train.py --gpu 0 --scene shapes_rotation`     --> will train on GPU 0 and shapes_rotation sequence
+- `python train.py --gpu GPU_ID ` 
+- For example: `python train.py --gpu 0 `     --> will train on GPU 0 and 
 
 ### Predict & evaluate
 - `cd main_keras`
