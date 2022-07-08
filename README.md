@@ -2,18 +2,14 @@
 Fork from https://github.com/nqanh/pose_relocalization
 Fixes to old version code
 ### Requirements
-
-- tensorflow-gpu
+- python=3.6.13
+- tensorflow-gpu=1.15.0
 - Keras 2.0.3
-
+- more details in environment.yaml
+- note: Do not use 30series GPU(Some unknown errors)
 ### Download dataset
 - Download datafrom from: http://rpg.ifi.uzh.ch/davis_data.html 
 - Unzip and copy to **/event_data/raw_data** foler 
-
-### Create train/test data
-- `cd dataset_script`
-- `python CREATE_DATA.py`
-- change **list_scene** inside **CREATE_DATA.py** for other scene
 
 ### Run train script:
 - `cd main_keras`
