@@ -16,7 +16,9 @@ Fixes to old version code
 ### Run train script:
 - `cd main_keras`
 - `python train.py --gpu GPU_ID ` 
-- For example: `python train.py --gpu 0 `     --> will train on GPU 0 and 
+- For example: `python train.py --gpu 0 `     
+- --> will train on GPU 0 
+- The parameters of the original repository are for the original version. Here write the required paths directly to the file.
 
 ### Predict & evaluate
 - `cd main_keras`
