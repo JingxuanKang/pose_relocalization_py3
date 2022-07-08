@@ -8,8 +8,7 @@ Fixes to old version code
 - more details in environment.yaml
 - note: Do not use 30series GPU(Some unknown errors)
 ### Download dataset
-- Download datafrom from: http://rpg.ifi.uzh.ch/davis_data.html 
-- Unzip and copy to **/event_data/raw_data** foler 
+- create dataset 
 
 ### Run train script:
 - `cd main_keras`
