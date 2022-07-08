@@ -143,7 +143,7 @@ if __name__ == '__main__':
         #data_path = os.path.join(dataset_folder, scene_id, split_id)
         data_path = os.path.join(dataset_folder, scene_id, split_id, 'percentage_pkl', '100')  ## -->> always test with all events i.e. 100%
         #print 'data path: ', data_path
-        train_image, train_pose = load_data(root_path+'dataset', 'train.pkl')
+        train_image, train_pose = load_data(root_path+'/dataset', 'train.pkl')
         print ('convert to numpy ...')
         train_image = np.array(train_image)
         train_pose = np.array(train_pose)
