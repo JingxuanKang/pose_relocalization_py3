@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 import argparse
+import pickle
 #from dataset_script.CREATE_DATA import split_id
 
 
@@ -20,7 +21,9 @@ import tensorflow as tf
 
 from dataset_script.data_io_cnn import load_data
 from main_keras.vgg16 import VGG_LSTM2
-
+config = tf.ConfigProto()
+config.gpu_options.allow_growth = True
+sess = tf.Session(config=config)
 
 ##split_id = 'img_pose_all' ## random split
 split_id = 'img_pose_all_novel_split'  ## novel split
@@ -143,7 +146,7 @@ if __name__ == '__main__':
         #data_path = os.path.join(dataset_folder, scene_id, split_id)
         data_path = os.path.join(dataset_folder, scene_id, split_id, 'percentage_pkl', '100')  ## -->> always test with all events i.e. 100%
         #print 'data path: ', data_path
-        train_image, train_pose = load_data(root_path+'/dataset', 'train.pkl')
+        train_image, train_pose =     pickle.load(open('../dataset/train.pkl','rb'))
         print ('convert to numpy ...')
         train_image = np.array(train_image)
         train_pose = np.array(train_pose)

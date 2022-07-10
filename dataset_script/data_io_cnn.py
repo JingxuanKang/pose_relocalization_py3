@@ -3,7 +3,6 @@ import pickle
 import numpy as np
 import random
 import cv2
-
 from keras.preprocessing import image
 from dataset_script.events_to_img import padzero
 
@@ -12,7 +11,8 @@ random.seed(99999)
 def load_data(main_path, pkl_file):
     try:
         print ('Loading pickle file ....'), os.path.join(main_path, pkl_file)
-        X, Y = pickle.load(open(os.path.join(main_path, pkl_file), 'rb'))
+        with open(os.path.join(main_path, pkl_file), 'rb'):
+            X,Y=pickle.load(f)
         print ('........................ done!')
     except Exception:
         print ('ERROR: File ', pkl_file, 'does not exist!')
