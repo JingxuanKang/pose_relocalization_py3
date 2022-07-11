@@ -2,7 +2,7 @@
 Fork from https://github.com/nqanh/pose_relocalization
 Fixes to old version code
 ### Requirements
-- python=3.6.13
+- python=2.7
 - tensorflow-gpu=1.15.0
 - Keras 2.0.3
 - more details in environment.yaml
@@ -24,6 +24,15 @@ Fixes to old version code
 - `cd main_keras`
 - `python predict.py`
 - Change **in_scene_id**, **in_net_id**, **in_model_file_name** in this file for different scene
+
+### Fix error
+Instead of calling the read pickle method in dota_io_cnn.py, the pickle read is used directly in the train. (Unknown error)
+
+_tkinter.TclError: no display name and no $DISPLAY environment variable
+import matplotlib
+matplotlib.use('Agg')
+before import matplotlib.pyplot as plt
+
 
 
 If you find this code useful in your research, please consider citing:
