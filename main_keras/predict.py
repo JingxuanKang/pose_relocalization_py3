@@ -103,7 +103,9 @@ def predict_and_evaluate(in_scene_id, in_net_id, in_model_file_name):
     #dataset_folder = '/home/anguyen/workspace/dataset/Event/processed/'
     dataset_folder = os.path.join(root_path, 'event_data', 'processed')
     data_path = os.path.join(dataset_folder, scene_id, split_id)    
-    testX, testY = load_data(data_path, 'test.pkl')
+
+    #  pickle.load(open('../dataset/train.pkl','rb'))
+    # testX, testY = load_data(data_path, 'test.pkl')
     # convert to numpy array
     testX = np.array(testX)
     testY = np.array(testY)
@@ -241,7 +243,7 @@ def predict_and_evaluate_percentage_img(in_scene_id, in_net_id, trained_model, c
     dataset_folder = os.path.join(root_path, 'event_data', 'processed')
     data_path = os.path.join(dataset_folder, scene_id, split_id, 'percentage_pkl', str(current_percentage))    
     #data_path = '/home/anguyen/workspace/paper_src/2018.icra.event.source/event_data/processed/shapes_rotation/img_pose_all/percentage_test/10'
-    testX, testY = load_data(data_path, 'test.pkl')
+    testX, testY = pickle.load(open('../dataset/test.pkl','rb'))
     # convert to numpy array
     testX = np.array(testX)
     testY = np.array(testY)
