@@ -1,0 +1,2 @@
+scene_id current_percentage median_error_met average_error_met median_error_deg average_error_deg accuracy_statistic
+shapes_rotation lstm100 0.062417282524038234 0.06323391958500241 79.54366413474392 84.83098846146987 0.0
