@@ -4,7 +4,7 @@ import time
 import math
 from keras.models import load_model
 
-
+import pickle
 
 import sys
 
@@ -44,9 +44,9 @@ def predict_pose(in_scene_id, in_net_id, in_model_file_name):
     
     # load test data
     #dataset_folder = '/home/anguyen/workspace/dataset/Event/processed/'
-    dataset_folder = os.path.join(root_path, 'event_data', 'processed')
-    data_path = os.path.join(dataset_folder, scene_id, split_id)    
-    testX, testY = load_data(data_path, 'test.pkl')
+    # dataset_folder = os.path.join(root_path, 'event_data', 'processed')
+    # data_path = os.path.join(dataset_folder, scene_id, split_id)    
+    testX, testY = pickle.load(open('../dataset/test.pkl','rb'))
     # convert to numpy array
     testX = np.array(testX)
     testY = np.array(testY)
@@ -391,10 +391,10 @@ def main_predict_and_evaluate_percentage_img(in_scene_id, in_net_id, in_model_fi
     
 if __name__ == '__main__':
     
-    in_scene_id = 'shapes_6dof'
+    in_scene_id = 'shapes_rotation'
     in_net_id = 'vgg_lstm2'
     
-    in_model_file_name = 'full_model_epoch_e1000.hdf5'
+    in_model_file_name = 'full_model_epoch_e400.hdf5'
       
     main_predict_and_evaluate_percentage_img(in_scene_id, in_net_id, in_model_file_name)
 
