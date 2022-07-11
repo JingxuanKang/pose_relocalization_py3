@@ -1,0 +1,44 @@
+Epoch 1350
+  median_error_met 0.06768982889286093
+  average_error_met 0.07036869447047668
+  median_error_deg 105.8000166810748
+  average_error_deg 90.81637095084368
+  accuracy_statistic 0.126262626263
+
+Epoch 1200
+  median_error_met  0.06527425658257421
+  average_error_met 0.06892945304273565
+  median_error_deg 103.32765147851853
+  average_error_deg 90.42110742237278
+  accuracy_statistic 0.378787878788
+  
+Epoch 350
+  median_error_met 0.06371241701181901
+  average_error_met 0.0642700964096017
+  median_error_deg 79.14079211602903
+  average_error_deg 84.92986919801857
+  accuracy_statistic 0.0
+
+Epoch 400
+  median_error_met  0.062417282524038234
+  average_error_met 06323391958500241
+  median_error_deg  79.54366413474392
+  average_error_deg   84.83098846146987
+  accuracy_statistic  0.0
+
+Epoch 1350 for training
+  median_error_met 0.040305625727356915
+  average_error_met 0.044520654085381924
+  median_error_deg  8.852207717562935
+  average_error_deg 13.803711214440384
+  accuracy_statistic 11.9025304592
+
+
+Epoch 350 for training
+  median_error_met 0.06080242020784476
+  average_error_met 0.06152504894677824
+  median_error_deg  78.56677704404531
+  average_error_deg 84.33247458776815
+  accuracy_statistic 0.0
+     
+     
