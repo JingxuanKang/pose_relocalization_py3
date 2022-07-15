@@ -396,7 +396,7 @@ if __name__ == '__main__':
     in_scene_id = 'shapes_rotation'
     in_net_id = 'vgg_lstm2'
     
-    in_model_file_name = 'full_model_epoch_e390.hdf5'
+    in_model_file_name = 'full_model_epoch_e350.hdf5'
       
     main_predict_and_evaluate_percentage_img(in_scene_id, in_net_id, in_model_file_name)
 
