@@ -41,4 +41,19 @@ Epoch 350 for training
   average_error_deg 84.33247458776815
   accuracy_statistic 0.0
      
+
+
+Epoch 3500 for test dataset 
+  median_error_met 0.06855104198057116
+  average_error_met 0.07345727497793934
+  median_error_deg  87.76420121591319
+  average_error_deg 81.39940747029216
+  accuracy_statistic 0.252525252525
      
+Epoch 350 for test dataset 
+  median_error_met 0.0550894554409444 
+  average_error_met 0.05727313182645782
+  median_error_deg  75.50275766687571
+  average_error_deg 80.0209475855834
+  accuracy_statistic 0.0
+
